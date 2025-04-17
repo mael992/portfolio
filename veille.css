@@ -1,0 +1,101 @@
+/* Base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Titres */
+h1, h2, h3 {
+    color: #005f6a;
+}
+
+h2 {
+    border-bottom: 2px solid #005f6a;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+/* Navigation */
+nav {
+    background-color: #007BFF;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Articles */
+.section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+article {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+/* Liens */
+a {
+    color: #005f6a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Listes */
+ul {
+    padding-left: 20px;
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+}
