@@ -1,19 +1,23 @@
-/* Style général */
+/* ===================== */
+/* STYLE GÉNÉRAL */
+/* ===================== */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #1d1d1b 0%, #3c3c3c 100%);  /* Dégradé élégant inspiré Porsche */
-    color: #f2f2f2;   /*Texte clair sur fond sombre */
+    background: linear-gradient(135deg, #1d1d1b 0%, #3c3c3c 100%);
+    color: #f2f2f2;
     line-height: 1.6;
 }
 
-/* Navigation */
+/* ===================== */
+/* NAVIGATION */
+/* ===================== */
 nav {
-    background-color: rgba(0, 0, 0, 0.8);  /* Noir semi-transparent */
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);  /* Ombre accentuée */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
 nav ul {
@@ -22,11 +26,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0 1.5rem;
+    gap: 2rem;
 }
 
 nav ul li a {
@@ -35,126 +35,153 @@ nav ul li a {
     font-weight: bold;
     font-size: 1.1rem;
     position: relative;
-    padding-bottom: 3px;
-    transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Effet au survol des liens de la navbar */
-nav ul li a:hover {
-    color: #d40000;  /* Rouge Porsche au survol */
-    border-bottom: 2px solid #d40000;  /* Sous-lignage élégant au survol */
-}
-
-/* GitHub Link (au dessous de la navbar) */
-.github-link {
-    text-align: left;
-    margin: 1rem 2rem;
-}
-
-.github-link a {
-    font-weight: bold;
-    color: #d40000; /* Rouge Porsche */
-    font-size: 1.3rem;
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 3px;
-    transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-.github-link a:hover {
-    color: #fff;  /* Texte clair au survol */
-    border-bottom: 2px solid #d40000;  /* Sous-lignage avec effet */
-}
-
-/* Titres principaux */
-h1 {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 3rem;
-    color: #fff;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);  /* Ombre légère pour donner un effet de profondeur */
-}
-
-/* Liens et boutons */
-a {
-    color: #d40000; /* Rouge Porsche pour les liens */
-    text-decoration: none;
-    font-weight: bold;
+    padding-bottom: 4px;
     transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #fff;
-    text-decoration: underline;
+nav ul li a:hover {
+    color: #d40000;
+    border-bottom: 2px solid #d40000;
 }
 
-/* Liens de téléchargement */
-a[download] {
-    display: inline-block;
-    background-color: #d40000;  /* Rouge Porsche */
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    margin: 1.5rem auto;
+/* ===================== */
+/* TITRE PRINCIPAL */
+/* ===================== */
+h1 {
     text-align: center;
+    margin-top: 2.5rem;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* ===================== */
+/* BOUTONS HERO (CV + GITHUB) */
+/* ===================== */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    margin: 2.5rem 0;
+    flex-wrap: wrap;
+}
+
+/* Bouton CV */
+.btn-cv {
+    background-color: #d40000;
+    color: #fff;
+    padding: 0.9rem 1.8rem;
+    border-radius: 6px;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Effet au survol des boutons */
-a[download]:hover {
-    background-color: #b30000;  /* Rouge plus foncé au survol */
-    transform: scale(1.05);  /* Effet de zoom pour plus d'impact */
+.btn-cv:hover {
+    background-color: #b30000;
+    transform: scale(1.06);
 }
 
-/* Sections */
+/* Bouton GitHub */
+.btn-github {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #d40000;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #d40000;
+}
+
+.btn-github img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-github:hover {
+    background-color: #b30000;
+    transform: scale(1.06);
+}
+
+/* ===================== */
+/* SECTIONS */
+/* ===================== */
 section {
-    background: #1d1d1b;  /* Noir Porsche */
-    padding: 2rem;
-    margin: 2rem auto;
+    background-color: #1d1d1b;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem auto;
     max-width: 900px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);  /* Ombre plus marquée pour un look premium */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
 }
 
 section h2 {
-    color: #d40000;  /* Rouge Porsche pour les sous-titres */
+    color: #d40000;
     margin-bottom: 1.5rem;
 }
 
-/* Listes */
+/* ===================== */
+/* ARTICLES (RÉALISATIONS) */
+/* ===================== */
+article {
+    margin-bottom: 2rem;
+}
+
+article h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+article ul {
+    padding-left: 1.2rem;
+}
+
+article ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===================== */
+/* LISTES */
+/* ===================== */
 ul {
     padding-left: 1.2rem;
 }
 
 ul li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.7rem;
 }
 
-/* Pied de page */
+/* ===================== */
+/* FOOTER */
+/* ===================== */
 footer {
-    background-color: #1d1d1b;  /* Noir Porsche */
-    color: #f2f2f2;
+    background-color: #1d1d1b;
+    color: #aaa;
     text-align: center;
-    padding: 1.2rem;
+    padding: 1.5rem;
     margin-top: 3rem;
-    font-size: 1rem;
-    border-top: 2px solid #333;  /* Légère séparation pour le pied de page */
+    border-top: 1px solid #333;
+    font-size: 0.95rem;
 }
 
-/* Responsive */
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
 @media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
+    h1 {
+        font-size: 2.3rem;
     }
 
     section {
-        margin: 1rem;
-        padding: 1.5rem;
+        margin: 1.5rem 1rem;
+        padding: 1.8rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
     }
 }
