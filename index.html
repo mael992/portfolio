@@ -3,88 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maël Aumont</title>
+    <title>Maël Aumont - Portfolio</title>
     <link href="index.css" rel="stylesheet" />
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav>
-         <ul>
+        <ul>
             <li><a href="tableau.html">Tableau</a></li>
-            <li><a href="veille.html">Veille Technologique</a></li>
-         </ul>
+            <li><a href="veille.html">Veille</a></li>
+        </ul>
     </nav>
 
-    <h1>Maël Aumont</h1>
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Maël Aumont</h1>
+            <div class="hero-buttons">
+                <a href="CV.pdf" download class="btn-cv">Télécharger mon CV</a>
+                <a href="https://github.com/mael992" target="_blank" class="btn-github">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </header>
 
-    <div class="hero-buttons">
-        <a href="CV.pdf" download class="btn-cv">Télécharger mon CV</a>
-    
-        <a href="https://github.com/mael992" target="_blank" class="btn-github">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-            GitHub
-        </a>
-    </div>
-    
-
-
-    <section id="presentation">
+    <!-- Présentation -->
+    <section id="presentation" class="section">
         <h2>Présentation</h2>
-        <p>Je m'appelle Mael Aumont-Roinac, actuellement étudiant en <strong>BTS SIO (Services Informatiques aux Organisations)</strong>, spécialité SLAM (Solutions Logicielles et Applications Métiers).</p>
-    
-        <p>Passionné par le <strong>développement Web</strong>, l’<strong>algorithmique</strong>, les <strong>systèmes Linux</strong> et les nouvelles technologies, je construis jour après jour un profil polyvalent et curieux. Mon parcours m’a permis d'explorer des domaines variés, allant de la programmation orientée objet à l’intégration d’interfaces responsives, en passant par l’administration système.</p>
-    
-        <p>J’ai participé à plusieurs projets pédagogiques comme la reproduction de l’interface Netflix (responsive & collaborative), la création d’un jeu de Monopoly en Python (architecture POO), et j’ai validé une <strong>certification Linux</strong> en configurant manuellement une machine virtuelle. Chaque projet est pour moi l’occasion d’appliquer les compétences visées par le référentiel, tout en développant rigueur, autonomie et esprit d’équipe.</p>
-    
-        <p>Curieux de nature, je réalise également une <strong>veille technologique</strong> régulière sur les évolutions du langage <strong>TypeScript</strong>, les usages de <strong> l’intelligence artificielle</strong> en développement, ou encore les plateformes <strong>blockchain</strong> comme Hyperweb. Ces sujets alimentent ma réflexion sur l’avenir du métier de développeur et les enjeux de demain.</p>
-    
-        <p>Je suis aujourd’hui en pleine phase d’exploration, motivé à monter en compétences, et prêt à relever les défis d’une carrière dans le développement logiciel.</p>
+        <p>Je m'appelle Maël Aumont-Roinac, étudiant en <strong>BTS SIO (Services Informatiques aux Organisations)</strong>, spécialité SLAM.</p>
+        <p>Passionné par le <strong>développement Web</strong>, l’<strong>algorithmique</strong> et les <strong>systèmes Linux</strong>, je développe un profil polyvalent et curieux. Mon parcours m’a permis d'explorer divers domaines : programmation orientée objet, intégration d’interfaces responsives et administration système.</p>
+        <p>Chaque projet est pour moi l’occasion de mettre en pratique mes compétences, développer rigueur, autonomie et esprit d’équipe, tout en explorant de nouvelles technologies.</p>
     </section>
-    
-    <section id="realisations">
-        <h2>Réalisations & Compétences</h2>
-    
-        <article>
-            <h3>Projet Netflix – Responsive Design</h3>
-            <p>Projet collaboratif visant à reproduire l’interface de Netflix. Utilisation de GitHub pour la répartition des tâches, mise en place d’un design responsive avec HTML/CSS.</p>
-            <ul>
-                <li><strong>Compétences développées :</strong></li>
-                <li>Travailler en mode projet (organisation via GitHub)</li>
-                <li>Développer la présence en ligne (intégration responsive)</li>
-                <li>Développement professionnel (gestion de version)</li>
-            </ul>
-        </article>
-    
-        <article>
-            <h3>Projet Monopoly – Programmation Orientée Objet</h3>
-            <p>Réalisation d’un jeu de Monopoly en Python avec une architecture orientée objet, intégrant logique métier, affichage console et gestion des règles.</p>
-            <ul>
-                <li><strong>Compétences développées :</strong></li>
-                <li>Gérer le patrimoine informatique (structuration du code)</li>
-                <li>Travailler en mode projet (planification et conception)</li>
-                <li>Développement professionnel (maîtrise de la POO et bonne documentation)</li>
-            </ul>
-        </article>
+
+    <!-- Compétences -->
+    <section id="competences" class="section">
+        <h2>Compétences</h2>
+        <div class="competences-grid">
+            <div class="competence-card">
+                <h4>Développement Web</h4>
+                <p>HTML, CSS, JavaScript, TypeScript</p>
+            </div>
+            <div class="competence-card">
+                <h4>Programmation Orientée Objet</h4>
+                <p>Python, Java</p>
+            </div>
+            <div class="competence-card">
+                <h4>Gestion de projet</h4>
+                <p>Git / GitHub</p>
+            </div>
+            <div class="competence-card">
+                <h4>Systèmes Linux</h4>
+                <p>Administration et configuration</p>
+            </div>
+            <div class="competence-card">
+                <h4>Veille technologique</h4>
+                <p>Curiosité pour les nouvelles technologies</p>
+            </div>
+            <div class="competence-card">
+                <h4>Refonte WordPress</h4>
+                <p>Création et mise à jour de sites, personnalisation de thèmes et optimisation</p>
+            </div>
+        </div>
     </section>
-    <section id="veille">
-        <h2>Synthèse de veille technologique – TypeScript & Technologies Associées</h2>
-    
-        <p>Au cours de ma veille technologique, j’ai suivi de près l’évolution de l’écosystème TypeScript, ainsi que l’émergence de nouvelles plateformes et outils associés. Voici les grandes tendances que j’ai identifiées :</p>
-    
-        <ul>
-            <li><strong>Améliorations du langage TypeScript</strong> : Les versions 4.8 et 5.8 ont introduit des optimisations importantes en termes d'inférence de types, de vérification conditionnelle et de performance du compilateur.</li>
-            
-            <li><strong>Interopérabilité et performances</strong> : Microsoft investit dans une version de TypeScript portée sur Go, promettant des temps de compilation jusqu’à 10x plus rapides. Cela reflète un besoin croissant d’outils plus légers et réactifs pour les grands projets.</li>
-    
-            <li><strong>Blockchain et TypeScript</strong> : La plateforme <em>Hyperweb</em> permet aux développeurs d’utiliser TypeScript pour créer des dApps multi-chaînes, facilitant l’entrée dans le Web3 sans apprentissage de langages complexes.</li>
-    
-            <li><strong>IA & reverse engineering</strong> : L'outil <em>Claude Code</em> met en lumière la capacité des IA à désobfusquer du code propriétaire, posant de nouvelles questions sur la sécurité logicielle et la frontière entre open-source et code fermé.</li>
-        </ul>
-    
-        <p>Grâce à cette veille, j’ai pris conscience de l’importance de rester informé sur les évolutions des outils de développement, mais aussi sur les enjeux de sécurité et d’éthique liés aux nouvelles technologies. Ces découvertes ont renforcé ma motivation à apprendre des langages comme Go, à explorer la blockchain, et à me former aux outils d’analyse avancés utilisés par les intelligences artificielles.</p>
-    </section>
-    
+
+
+    <section id="projets">
+    <h2>Projets</h2>
+
+    <div class="projets-grid">
+
+        <!-- Projets professionnels -->
+        <div class="projets-category">
+            <h3>Projets Professionnels</h3>
+            <div class="projects-cards">
+                <article>
+                    <h4>Projet WordPress</h4>
+                    <p>Création d’un site pour une PME, gestion des bdd, sécurité et référencements</p>
+                    <ul>
+                        <li>Installation et configuration de WordPress et plugins essentiels</li>
+                        <li>Conception et personnalisation de thème responsive</li>
+                        <li>Intégration de contenu et mise en page UX-friendly</li>
+                        <li>Optimisation SEO et performance du site</li>
+                        <li>Gestion de la sécurité : backups, mises à jour et permissions</li>
+                        <li>Gestion de base de données et structure des contenus</li>
+                    </ul>
+                </article>
+
+                <article>
+                   <h4>Développement de Bots d’Échange</h4>
+                    <p>Conception et développement de solutions automatisées pour la gestion des transactions et placements clients.</p>
+                    <ul>
+                        <li>Création d’un wrapper HTTP pour interfacer les APIs d’échange</li>
+                        <li>Développement de bots pour automatiser les transactions et placements financiers</li>
+                        <li>Gestion sécurisée des données clients et suivi des opérations</li>
+                        <li>Optimisation des performances et fiabilité des bots</li>
+                        <li>Documentation et structuration du code pour maintenance et évolutivité</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <!-- Projets scolaires -->
+        <div class="projets-category">
+            <h3>Projets Scolaires</h3>
+            <div class="projects-cards">
+                <article>
+                    <h4>Projet Netflix – Responsive Design</h4>
+                    <p>Reproduction collaborative de l’interface Netflix avec HTML/CSS et GitHub.</p>
+                    <ul>
+                        <li>Design responsive adapté à mobiles, tablettes et desktops</li>
+                        <li>Gestion de projet et versioning avec Git/GitHub</li>
+                        <li>workflow collaboratif</li>
+                        <li>Utilisation de Flexbox et Grid pour la mise en page</li>
+                        <li>Mise en place de carrousels interactifs pour les sections de contenu</li>
+                        <li>Barre de recherche avec filtrage dynamique par ID</li>
+                    </ul>
+                </article>
+
+                <a href="https://www.google.com" target="_blank" class="competence-card-link">
+                    <article>
+                        <h4>Jeu Monopoly – POO en Python</h4>
+                        <p>Création d’un jeu Monopoly en Python avec architecture orientée objet.</p>
+                        <ul>
+                            <li>Conception d’une architecture orientée objet pour gérer les joueurs, propriétés et tours</li>
+                            <li>Implémentation de la logique métier et des règles complètes du jeu</li>
+                            <li>Gestion de l’affichage dynamique en console et interactions utilisateur</li>
+                            <li>Structuration et documentation du code pour faciliter la maintenance et les évolutions</li>
+                            <li>Tests et validation des fonctionnalités pour assurer la fiabilité du jeu</li>
+                        </ul>
+                    </article>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Footer -->
     <footer>
+        <p>© 2026 Maël Aumont</p>
     </footer>
-    
+
 </body>
 </html>
