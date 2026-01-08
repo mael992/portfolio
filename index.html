@@ -4,148 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maël Aumont - Portfolio</title>
-    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="tableau.html">Tableau</a></li>
-            <li><a href="veille.html">Veille</a></li>
-        </ul>
-    </nav>
+<!-- ===================== -->
+<!-- NAVIGATION -->
+<!-- ===================== -->
+<nav>
+    <ul>
+        <li><a href="tableau.html">Tableau</a></li>
+        <li><a href="veille.html">Veille</a></li>
+    </ul>
+</nav>
 
-    <!-- HERO -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Maël Aumont</h1>
-            <div class="hero-buttons">
-                <a href="CV.pdf" download class="btn-cv">Télécharger mon CV</a>
-                <a href="https://github.com/mael992" target="_blank" class="btn-github">
-                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-                    GitHub
-                </a>
-            </div>
+<!-- ===================== -->
+<!-- HERO -->
+<!-- ===================== -->
+<header class="hero">
+    <div class="hero-content">
+        <h1>Maël Aumont</h1>
+
+        <div class="hero-buttons">
+            <a href="CV.pdf" download class="btn-cv">Télécharger mon CV</a>
+
+            <a href="https://github.com/mael992" target="_blank" class="btn-github">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+                GitHub
+            </a>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Présentation -->
-    <section id="presentation" class="section">
-        <h2>Présentation</h2>
-        <p>Je m'appelle Maël Aumont-Roinac, étudiant en <strong>BTS SIO (Services Informatiques aux Organisations)</strong>, spécialité SLAM.</p>
-        <p>Passionné par le <strong>développement Web</strong>, l’<strong>algorithmique</strong> et les <strong>systèmes Linux</strong>, je développe un profil polyvalent et curieux. Mon parcours m’a permis d'explorer divers domaines : programmation orientée objet, intégration d’interfaces responsives et administration système.</p>
-        <p>Chaque projet est pour moi l’occasion de mettre en pratique mes compétences, développer rigueur, autonomie et esprit d’équipe, tout en explorant de nouvelles technologies.</p>
-    </section>
+<!-- ===================== -->
+<!-- PRÉSENTATION -->
+<!-- ===================== -->
+<section id="presentation">
+    <h2>Présentation</h2>
 
-    <!-- Compétences -->
-    <section id="competences" class="section">
-        <h2>Compétences</h2>
-        <div class="competences-grid">
-            <div class="competence-card">
-                <h4>Développement Web</h4>
-                <p>HTML, CSS, JavaScript, TypeScript</p>
-            </div>
-            <div class="competence-card">
-                <h4>Programmation Orientée Objet</h4>
-                <p>Python, Java</p>
-            </div>
-            <div class="competence-card">
-                <h4>Gestion de projet</h4>
-                <p>Git / GitHub</p>
-            </div>
-            <div class="competence-card">
-                <h4>Systèmes Linux</h4>
-                <p>Administration et configuration</p>
-            </div>
-            <div class="competence-card">
-                <h4>Veille technologique</h4>
-                <p>Curiosité pour les nouvelles technologies</p>
-            </div>
-            <div class="competence-card">
-                <h4>Refonte WordPress</h4>
-                <p>Création et mise à jour de sites, personnalisation de thèmes et optimisation</p>
-            </div>
+    <p>
+        Je m'appelle <strong>Maël Aumont-Roinac</strong>, étudiant en
+        <strong>BTS SIO</strong> spécialité <strong>SLAM</strong>.
+    </p>
+
+    <p>
+        Passionné par le <strong>développement web</strong> je développe un profil polyvalent
+        et rigoureux.
+    </p>
+
+    <p>
+        Chaque projet est une opportunité de renforcer mes compétences techniques,
+        mon autonomie et mon esprit d’équipe.
+    </p>
+</section>
+
+<!-- ===================== -->
+<!-- COMPÉTENCES -->
+<!-- ===================== -->
+<section id="competences">
+    <h2>Compétences</h2>
+
+    <div class="competences-grid">
+        <div class="competence-card">
+            <h4>Développement Web</h4>
+            <p>HTML, CSS, JavaScript, TypeScript</p>
         </div>
-    </section>
 
+        <div class="competence-card">
+            <h4>Programmation Orientée Objet</h4>
+            <p>Python, Java</p>
+        </div>
 
-    <section id="projets">
+        <div class="competence-card">
+            <h4>Gestion de projet</h4>
+            <p>Git / GitHub</p>
+        </div>
+
+        <div class="competence-card">
+            <h4>Systèmes Linux</h4>
+            <p>Administration & configuration</p>
+        </div>
+
+        <div class="competence-card">
+            <h4>Veille technologique</h4>
+            <p>Analyse et suivi des nouvelles technologies</p>
+        </div>
+
+        <div class="competence-card">
+            <h4>Refonte WordPress</h4>
+            <p>Création, personnalisation, optimisation et sécurité</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== -->
+<!-- PROJETS -->
+<!-- ===================== -->
+<section id="projets">
     <h2>Projets</h2>
 
     <div class="projets-grid">
 
-        <!-- Projets professionnels -->
+        <!-- PROJETS PRO -->
         <div class="projets-category">
             <h3>Projets Professionnels</h3>
+
             <div class="projects-cards">
-                <article>
+                <article class="card card-link">
                     <h4>Projet WordPress</h4>
-                    <p>Création d’un site pour une PME, gestion des bdd, sécurité et référencements</p>
+                    <p>Création et refonte de site pour PME</p>
                     <ul>
-                        <li>Installation et configuration de WordPress et plugins essentiels</li>
-                        <li>Conception et personnalisation de thème responsive</li>
-                        <li>Intégration de contenu et mise en page UX-friendly</li>
-                        <li>Optimisation SEO et performance du site</li>
-                        <li>Gestion de la sécurité : backups, mises à jour et permissions</li>
-                        <li>Gestion de base de données et structure des contenus</li>
+                        <li>Installation et configuration de WordPress</li>
+                        <li>Personnalisation de thèmes responsive</li>
+                        <li>Optimisation SEO et performances</li>
+                        <li>Sécurisation, sauvegardes et mises à jour</li>
+                        <li>Gestion de base de données</li>
                     </ul>
                 </article>
 
-                <article>
-                   <h4>Développement de Bots d’Échange</h4>
-                    <p>Conception et développement de solutions automatisées pour la gestion des transactions et placements clients.</p>
+                <article class="card card-link">
+                    <h4>Développement de Bots d’Échange</h4>
+                    <p>Automatisation de transactions et placements clients</p>
                     <ul>
-                        <li>Création d’un wrapper HTTP pour interfacer les APIs d’échange</li>
-                        <li>Développement de bots pour automatiser les transactions et placements financiers</li>
-                        <li>Gestion sécurisée des données clients et suivi des opérations</li>
-                        <li>Optimisation des performances et fiabilité des bots</li>
-                        <li>Documentation et structuration du code pour maintenance et évolutivité</li>
+                        <li>Création de wrappers HTTP pour APIs</li>
+                        <li>Développement de bots transactionnels</li>
+                        <li>Sécurisation des données</li>
+                        <li>Optimisation des performances</li>
+                        <li>Documentation et maintenabilité</li>
                     </ul>
                 </article>
             </div>
         </div>
 
-        <!-- Projets scolaires -->
+        <!-- PROJETS SCOLAIRES -->
         <div class="projets-category">
             <h3>Projets Scolaires</h3>
+
             <div class="projects-cards">
-                <article>
+                <article class="card card-link" data-link="assets/presentations/netflix.pptx">
                     <h4>Projet Netflix – Responsive Design</h4>
-                    <p>Reproduction collaborative de l’interface Netflix avec HTML/CSS et GitHub.</p>
+                    <p>Reproduction de l’interface Netflix</p>
                     <ul>
-                        <li>Design responsive adapté à mobiles, tablettes et desktops</li>
-                        <li>Gestion de projet et versioning avec Git/GitHub</li>
-                        <li>workflow collaboratif</li>
-                        <li>Utilisation de Flexbox et Grid pour la mise en page</li>
-                        <li>Mise en place de carrousels interactifs pour les sections de contenu</li>
-                        <li>Barre de recherche avec filtrage dynamique par ID</li>
+                        <li>Design responsive multi-écrans</li>
+                        <li>Workflow collaboratif GitHub</li>
+                        <li>Flexbox & Grid</li>
+                        <li>Carrousels interactifs</li>
+                        <li>Recherche dynamique par filtres</li>
                     </ul>
                 </article>
 
-                <a href="https://www.google.com" target="_blank" class="competence-card-link">
-                    <article>
-                        <h4>Jeu Monopoly – POO en Python</h4>
-                        <p>Création d’un jeu Monopoly en Python avec architecture orientée objet.</p>
-                        <ul>
-                            <li>Conception d’une architecture orientée objet pour gérer les joueurs, propriétés et tours</li>
-                            <li>Implémentation de la logique métier et des règles complètes du jeu</li>
-                            <li>Gestion de l’affichage dynamique en console et interactions utilisateur</li>
-                            <li>Structuration et documentation du code pour faciliter la maintenance et les évolutions</li>
-                            <li>Tests et validation des fonctionnalités pour assurer la fiabilité du jeu</li>
-                        </ul>
-                    </article>
-                </a>
+                <article class="card card-link" data-link="projets/stage1.pptx">
+                    <h4>Jeu Monopoly – Python (POO)</h4>
+                    <p>Jeu complet avec architecture orientée objet</p>
+                    <ul>
+                        <li>Modélisation joueurs, propriétés et règles</li>
+                        <li>Logique métier complète</li>
+                        <li>Gestion des tours et interactions</li>
+                        <li>Code structuré et documenté</li>
+                        <li>Tests et validation</li>
+                    </ul>
+                </article>
             </div>
         </div>
 
     </div>
 </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Maël Aumont</p>
-    </footer>
+<!-- ===================== -->
+<!-- FOOTER -->
+<!-- ===================== -->
+<footer>
+    <p>© 2026 Maël Aumont</p>
+</footer>
 
 </body>
 </html>

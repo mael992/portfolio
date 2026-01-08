@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", sans-serif;
     background: linear-gradient(135deg, #1d1d1b 0%, #3c3c3c 100%);
     color: #f2f2f2;
     line-height: 1.6;
@@ -20,7 +20,7 @@ body {
 /* NAVIGATION */
 /* ===================== */
 nav {
-    background-color: #0e0e0d;
+    background: #0e0e0d;
     padding: 1rem 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
@@ -32,13 +32,13 @@ nav ul {
     gap: 2rem;
 }
 
-nav ul li a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+nav a {
     width: 140px;
     height: 45px;
-    background-color: rgba(212,0,0,0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(212,0,0,0.85);
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -46,18 +46,18 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: #d40000;
+nav a:hover {
+    background: #d40000;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 8px 20px rgba(212,0,0,0.7);
 }
 
 /* ===================== */
-/* HERO SECTION */
+/* HERO */
 /* ===================== */
 .hero {
-    background: url('img/hero.png') center/cover no-repeat;
     height: 60vh;
+    background: url("img/hero.png") center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,18 +82,16 @@ nav ul li a:hover {
     width: 160px;
     padding: 0.9rem;
     border-radius: 6px;
+    background: #d40000;
+    color: #fff;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    text-align: center;
-    background-color: #d40000;
-    color: #fff;
     transition: all 0.3s ease;
 }
 
 .btn-github {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 0.6rem;
 }
@@ -104,16 +102,16 @@ nav ul li a:hover {
 
 .btn-cv:hover,
 .btn-github:hover {
-    background-color: #b30000;
+    background: #b30000;
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(212,0,0,0.8);
 }
 
 /* ===================== */
-/* SECTIONS GENERALES */
+/* SECTIONS */
 /* ===================== */
 section {
-    background-color: #1d1d1b;
+    background: #1d1d1b;
     max-width: 900px;
     margin: 2.5rem auto;
     padding: 2.5rem;
@@ -128,63 +126,7 @@ section h2 {
 }
 
 /* ===================== */
-/* CARD LINK NEUTRE (CLICABLE) */
-/* ===================== */
-.card-link {
-    display: block;          /* toute la card cliquable */
-    cursor: pointer;
-    color: inherit;
-    text-decoration: none;
-}
-
-/* forcer tous les états du lien */
-.card-link:link,
-.card-link:visited,
-.card-link:hover,
-.card-link:active,
-.card-link:focus {
-    color: inherit !important;
-    text-decoration: none !important;
-}
-
-/* neutraliser les enfants */
-.card-link * {
-    color: inherit !important;
-    text-decoration: none !important;
-}
-
-/* hover sur l'article */
-.card-link:hover article {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(212,0,0,0.7);
-}
-
-/* ===================== */
-/* ARTICLES / CARDS */
-/* ===================== */
-article {
-    background-color: #2a2a28;
-    border-radius: 10px;
-    padding: 1.5rem;
-    min-height: 260px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-article h3,
-article h4 {
-    margin-bottom: 0.5rem;
-}
-
-article ul {
-    padding-left: 1.2rem;
-}
-
-/* ===================== */
-/* COMPETENCES GRID */
+/* COMPÉTENCES */
 /* ===================== */
 .competences-grid {
     display: grid;
@@ -193,7 +135,7 @@ article ul {
 }
 
 .competence-card {
-    background-color: #2a2a28;
+    background: #2a2a28;
     padding: 1.4rem;
     border-radius: 10px;
     text-align: center;
@@ -208,11 +150,11 @@ article ul {
 
 .competence-card h4 {
     color: #d40000;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 /* ===================== */
-/* PROJETS GRID */
+/* PROJETS */
 /* ===================== */
 .projets-grid {
     display: grid;
@@ -227,10 +169,60 @@ article ul {
 }
 
 /* ===================== */
+/* CARDS (CLIQUABLES) */
+/* ===================== */
+.card {
+    background: #2a2a28;
+    border-radius: 10px;
+    padding: 1.5rem;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* état cliquable */
+.card-link {
+    cursor: pointer;
+}
+
+/* hover clair */
+.card-link:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.8),
+        0 0 18px rgba(212,0,0,0.7);
+}
+
+/* icône lien */
+.card-link::after {
+    content: "↗";
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 1.2rem;
+    color: #d40000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-link:hover::after {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.card ul {
+    padding-left: 1.2rem;
+}
+
+/* ===================== */
 /* FOOTER */
 /* ===================== */
 footer {
-    background-color: #1d1d1b;
+    background: #1d1d1b;
     color: #aaa;
     text-align: center;
     padding: 1.5rem;
@@ -248,7 +240,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-    nav ul li a {
+    nav a {
         width: 110px;
         height: 40px;
         font-size: 0.95rem;
